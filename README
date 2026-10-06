@@ -1,0 +1,130 @@
+# Road Accident Analysis
+
+An end-to-end Data Analytics project analyzing UK road accident data from 2021–2025 using Python, MySQL, and Power BI.
+
+## Project Overview
+
+This project analyzes **513K+ UK road accident records** to understand accident trends, severity, road conditions, and environmental factors.
+
+The analysis was performed using Python for data preparation and exploratory analysis, MySQL for structured analysis, and Power BI for interactive dashboard development.
+
+## Objectives
+
+- Analyze accident trends across 2021–2025.
+- Understand accident severity and casualty patterns.
+- Compare accidents across urban and rural areas.
+- Examine the relationship between accidents and speed limits.
+- Analyze road, weather, lighting, and surface conditions.
+- Present key findings through interactive Power BI dashboards.
+
+## Dataset
+
+**Source:** UK Department for Transport – Road Safety Open Data
+
+- Records: **513,801**
+- Years: **2021–2025**
+- Original columns: **44**
+- Duplicate records: **0**
+
+The raw dataset is not included in this repository because of its large file size.
+
+## Tools & Technologies
+
+- **Python**
+  - Pandas
+  - Data Cleaning
+  - Exploratory Data Analysis
+- **MySQL**
+  - SQL Queries
+  - Aggregations
+  - Grouping & Filtering
+- **Power BI**
+  - Interactive Dashboards
+  - DAX Measures
+  - Data Visualization
+
+## Project Workflow
+
+### 1. Data Inspection
+Inspected dataset structure, data types, missing values, duplicates, and basic statistics.
+
+### 2. Data Cleaning
+- Converted date and time fields.
+- Checked missing values.
+- Removed duplicate records.
+- Prepared the cleaned dataset for analysis.
+
+### 3. Exploratory Data Analysis
+Analyzed:
+
+- Accidents by year
+- Accident severity
+- Urban vs rural accidents
+- Speed limits
+- Road types
+- Weather conditions
+- Light conditions
+- Road surface conditions
+- Day of week
+- Average casualties per accident
+- Average vehicles per accident
+
+### 4. SQL Analysis
+
+MySQL was used to perform structured analysis of the accident dataset, including yearly trends, severity distribution, road conditions, environmental conditions, and accident-level averages.
+
+### 5. Power BI Dashboard
+
+The final dashboard contains **3 pages**:
+
+#### Executive Overview
+- Total Accidents
+- Total Casualties
+- Total Vehicles
+- Accidents by Year
+- Accident Severity
+- Urban vs Rural
+
+#### Severity & Conditions
+- Accidents by Speed Limit
+- Weather Conditions
+- Light Conditions
+- Road Surface Conditions
+
+#### Road & Safety Analysis
+- Road Type
+- Urban vs Rural
+- Accidents by Day of Week
+- Average Casualties per Accident
+
+## Key Findings
+
+- **513,801** total accidents were recorded during 2021–2025.
+- Total casualties: **652,821**
+- Total vehicles involved: **937,265**
+- The majority of accidents were classified as **Slight** severity.
+- Urban areas recorded more accidents than rural areas.
+- The **30 mph** speed-limit category accounted for the highest number of accidents.
+- Average casualties per accident were approximately **1.27**.
+
+## Project Structure
+
+```text
+Road-Accident-Analysis/
+│
+├── python/
+│   ├── 01_data_inspection.py
+│   ├── 02_data_cleaning.py
+│   ├── 03_eda.py
+│   └── 04_data_mapping.py
+│
+├── sql/
+│   └── 01_road_accident_analysis.sql
+│
+├── screenshots/
+│   ├── Executive_Overview.png
+│   ├── Severity_Conditions.png
+│   └── Road_Safety_Analysis.png
+│
+├── Road_Accident_Analysis.pbix
+└── README.md
